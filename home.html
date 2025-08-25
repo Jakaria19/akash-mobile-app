@@ -19,6 +19,8 @@
 </head>
 
 <body class="bg-[#f4f5f7] h-[100vh] max-w-md mx-auto">
+    <!-- navbar -->
+
     <section class="flex justify-between items-center border-b-1 border-gray-400 p-3 bg-white">
         <div class="flex justify-center items-center">
             <img src="./assets/Group.png" alt="" class="h-[50px]">
@@ -35,39 +37,46 @@
         </div>
     </section>
 
+    <!-- Welcome to Payooo! -->
+
     <section class="px-[25px] pt-[25px] bg-white">
         <h1 class="text-2xl font-extrabold">Welcome to Payooo!</h1>
         <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
     </section>
 
+    <!-- buttons -->
+
     <section class="p-[25px] grid grid-cols-3 gap-4 bg-white rounded-b-2xl">
-        <div class="border-1 border-gray-300 rounded-lg text-center">
+        <div id="add-money" class="border-1 border-gray-300 rounded-lg text-center py-3">
             <img src="assets/wallet1.png" alt="" class="mx-auto">
             <h2>Add Money</h2>
         </div>
-        <div class="border-1 border-gray-300 rounded-lg text-center">
+        <div id="cash-out" class="border-1 border-gray-300 rounded-lg text-center py-3">
             <img src="assets/send1.png" alt="" class="mx-auto">
-            <h2>Cashout</h2>
+            <h2>Cash Out</h2>
         </div>
-        <div class="border-1 border-gray-300 rounded-lg text-center">
+        <div class="border-1 border-gray-300 rounded-lg text-center py-3">
             <img src="assets/money1.png" alt="" class="mx-auto">
             <h2>Transfer Money</h2>
         </div>
-        <div class="border-1 border-gray-300 rounded-lg text-center">
+        <div class="border-1 border-gray-300 rounded-lg text-center py-3">
             <img src="assets/bonus1.png" alt="" class="mx-auto">
             <h2>Get Bonus</h2>
         </div>
-        <div class="border-1 border-gray-300 rounded-lg text-center">
+        <div class="border-1 border-gray-300 rounded-lg text-center py-3">
             <img src="assets/purse1.png" alt="" class="mx-auto">
             <h2>Pay Bill</h2>
         </div>
-        <div class="border-1 border-gray-300 rounded-lg text-center">
+        <div class="border-1 border-gray-300 rounded-lg text-center py-3">
             <img src="assets/transaction1.png" alt="" class="mx-auto">
             <h2>Transactions</h2>
         </div>
     </section>
 
-    <section class="p-5">
+    <!-- all forms section -->
+
+    <!-- add money form -->
+    <section id="add-money-form" class="p-5">
         <h1 class="font-bold">Add Money</h1>
         <div class="bg-white mt-5 p-5 rounded-xl">
             <form>
@@ -89,7 +98,7 @@
                 <div>
                     <label for="" class="font-bold">Amount to Add</label>
                     <br>
-                    <input id="add-amount" type="text" placeholder="Add Amount to withdraw"
+                    <input id="add-amount" type="text" placeholder="Enter Amount to Add"
                         class="input bg-[#f4f5f7] my-3 rounded-3xl w-full">
                 </div>
                 <div>
@@ -99,6 +108,34 @@
                         class="input bg-[#f4f5f7] my-3 rounded-3xl w-full">
                 </div>
                 <button id="add-money-btn" class="btn text-white bg-blue-500 w-full rounded-3xl">Add Money</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- cash out form -->
+    <section id="cash-out-form" class="p-5">
+        <h1 class="font-bold">Cash Out</h1>
+        <div class="bg-white mt-5 p-5 rounded-xl">
+            <form>
+                <div>
+                    <label for="" class="font-bold">Agent Number</label>
+                    <br>
+                    <input id="agent-number" type="text" placeholder="Enter 11 digit number"
+                        class="input bg-[#f4f5f7] my-3 rounded-3xl w-full">
+                </div>
+                <div>
+                    <label for="" class="font-bold">Amount</label>
+                    <br>
+                    <input id="cash-out-amount" type="text" placeholder="Enter Amount to Withdraw"
+                        class="input bg-[#f4f5f7] my-3 rounded-3xl w-full">
+                </div>
+                <div>
+                    <label for="" class="font-bold">Pin Number</label>
+                    <br>
+                    <input id="pin" type="text" placeholder="Enter 4 digit pin number"
+                        class="input bg-[#f4f5f7] my-3 rounded-3xl w-full">
+                </div>
+                <button id="cash-out-btn" class="btn text-white bg-blue-500 w-full rounded-3xl">Withdraw Money</button>
             </form>
         </div>
     </section>
