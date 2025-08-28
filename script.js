@@ -1,5 +1,3 @@
-// console.log("script connected");
-
 //* login button
 
 document
@@ -20,9 +18,7 @@ document
     );
 
     if (mobileNumberValue === mobileNumber && pinNumberValue === pinNumber) {
-      //   console.log("all values matched");
-
-      //?   ekhane login korar por input field faka hocche na
+      //! ekhane login korar por input field faka hocche na
 
       window.location.href = "./home.html";
     } else {
